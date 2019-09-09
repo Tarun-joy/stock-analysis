@@ -8,7 +8,6 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-%matplotlib inline
 df = pd.read_csv(r"C:\Users\S533718\Desktop\Data analysis Datasets\datasets\Stock.csv",parse_dates= ["Date"])
 df['year'],df['month'],df['day'] = df.Date.dt.year, df.Date.dt.month, df.Date.dt.day
 df.describe()
